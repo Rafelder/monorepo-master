@@ -12,6 +12,12 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         __DIR__ . '/packages',
     ]);
 
+    
+    $parameters->set(Option::DIRECTORIES_TO_REPOSITORIES, [
+        'packages/first-package' => 'git@github.com:Rafelder/monorepo-first.git',
+        'packages/second-package' => 'git@github.com:Rafelder/monorepo-second.git',
+    ]);
+
     // how skip packages in loaded direectories?
     // $parameters->set(Option::PACKAGE_DIRECTORIES_EXCLUDES, [__DIR__ . '/packages/secret-package']);
 
