@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace YourMonorepo\FirstPackage;
 
-// FirstClass 2
+// FirstClass 3
 final class FirstClass
 {
 }
